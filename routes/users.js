@@ -4,6 +4,7 @@ const plm = require("passport-local-mongoose")
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log("Mongo error:", err));
+//  mongoose.connect("mongodb://127.0.0.1:27017/pinback");
  const userSchema=mongoose.Schema({
   username:String,
   name:String,

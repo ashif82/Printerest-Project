@@ -3,7 +3,7 @@
     <form id="uploadform" hidden action="/fileupload"method="POST" enctype="multipart/form-data">
         <input type="file" name="image">
     </form>
-    <div class="profdets flex flex-col items-center mt-20 ">
+    <div class="profdets flex flex-col items-center mt-5 ">
        <div class="relative">
         <span id="uploadicon" class="w-8 h-8 absolute bottom-0 right-0 rounded-full flex items-center justify-center bg-zinc-200">
             <i class="ri-pencil-line text-zinc-800"></i>
@@ -17,9 +17,9 @@
         <a href="/edit" class="px-7 py-2 mt-2 bg-zinc-600 rounded-full text-xs font-semibold">Edit</a>
         <a href="/add" class="px-10 py-2 rounded-lg bg-red-700 mt-3">Add New Post</a>
     </div>
-    <div class="card flex flex-wrap gap-10 px-10 mt-10 ">
-        <div class="card">
-            <div class="w-52 h-40 bg-zinc-200 rounded-lg overflow-hidden">
+    <div class="card flex flex-wrap gap-10 px-2  mt-10 ">
+        <div class="card ">
+            <div class="w-92 sm:w-[90%] md:w-[60%] lg:w-[52%] h-40 bg-zinc-200 rounded-lg overflow-hidden">
                 <img class="w-full h-full object-cover" src="/images/uploads/<%=user?.posts[0]?.Image %>" alt="">
             </div>
             <a href="/show" class=" inline-block text-xl font-semibold mt-5">Your Uploaded Pins</a>
